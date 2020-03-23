@@ -36,6 +36,7 @@ $fontsize: 1rem;
         @extend %fontstyle;
         &:focus {
             border: $input-border-size solid blue;
+            outline: none;
         }
     }
     .float {
