@@ -39,6 +39,7 @@
 
 .input-container .input:focus {
   border: 0.1em solid blue;
+  outline: none;
 }
 
 .input-container .float {
