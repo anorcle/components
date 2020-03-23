@@ -1,0 +1,47 @@
+$input-height: 1em;
+$input-padding: 1em;
+$label-padding: 0.1em;
+$input-container-padding: 1em;
+$label-height: 1em;
+$input-border-size: 0.1em;
+%fontstyle {
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+$fontsize: 1rem;
+.input-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    // background-color: #eee;
+    padding: $input-container-padding;
+    @extend %fontstyle;
+    .label {
+        position: absolute;
+        height: $label-height;
+        padding: $label-padding;
+        top: $input-padding + $input-container-padding + $input-border-size - $label-padding;
+        left: $input-padding + $input-container-padding + $input-border-size - $label-padding;
+        @extend %fontstyle;
+        transition: all 0.1s ease-in-out;
+        cursor: text;
+    }
+    .input {
+        flex-grow: 1;
+        padding: $input-padding;
+        height: $input-height;
+        border: $input-border-size solid gray;
+        border-radius: 0.5em;
+        @extend %fontstyle;
+        &:focus {
+            border: $input-border-size solid blue;
+        }
+    }
+    .float {
+        top: ($input-container-padding/2 + $input-border-size - $label-padding)*0.9;
+        left: ($input-padding + $input-container-padding + $input-border-size - $label-padding)*0.9;
+        font-size: 0.9rem;
+        background-color: #fff; 
+    }
+}
