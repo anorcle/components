@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./css/input.min.css">
     <style>
         .box {
-            max-width: 400px;
+            max-width: 300px;
             display: flex;
+            flex-direction: column;
         }
     </style>
     <script src="./js/input.js"></script>
@@ -20,18 +21,13 @@
     <script src="./js/index.js"></script>
 
     <script>
-        param = {
-            type: 'password',
-            label: 'Password',
-            id: 'password'
-        }
-        formInput = [
+        var formInputs = [
             {type: 'Email'},
             {type: 'Password'}
         ]
-        let form = document.getElementById('form');
-        
-        formInput.forEach(elm => {
+        var form = document.getElementById('form');
+
+        formInputs.forEach(elm => {
             form.appendChild(getInputElement(elm));
         });
     </script>
