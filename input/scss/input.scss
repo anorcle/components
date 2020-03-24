@@ -14,6 +14,7 @@ $input-border-size: 0.1em;
 $fontsize: 1rem;
 .input-wrapper {
     width: $input-width;
+    box-sizing: border-box;
     display: flex;
     position: relative;
     padding: $input-wrapper-padding;
