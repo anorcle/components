@@ -35,6 +35,7 @@
   height: 1em;
   border: 0.1em solid gray;
   border-radius: 0.5em;
+  background: none;
 }
 
 .input-container .input:focus {

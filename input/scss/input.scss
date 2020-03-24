@@ -35,6 +35,7 @@ $fontsize: 1rem;
         border: $input-border-size solid gray;
         border-radius: 0.5em;
         @extend %fontstyle;
+        background: none;
         &:focus {
             border: $input-border-size solid blue;
         }
