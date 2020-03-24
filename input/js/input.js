@@ -1,5 +1,5 @@
 /**
- * <div class="input-container">
+ * <div class="input-wrapper">
  *     <input type="text" class="input" id="input1" data-label="Name">
  *     <label for="input1" id="label1" class="label">Name</label>
  * </div>
@@ -8,8 +8,8 @@
 
 function getInputElement({type, id, label}) {
 
-    let inputContainer = document.createElement('div');
-    inputContainer.classList.add('input-container');
+    let inputWrapper = document.createElement('div');
+    inputWrapper.classList.add('input-wrapper');
 
     let input = document.createElement('input');
     input.classList.add('input');
@@ -37,7 +37,7 @@ function getInputElement({type, id, label}) {
         })
     }
 
-    inputContainer.appendChild(input);
-    inputContainer.appendChild(labelElm);
-    return inputContainer;
+    inputWrapper.appendChild(input);
+    inputWrapper.appendChild(labelElm);
+    return inputWrapper;
 }

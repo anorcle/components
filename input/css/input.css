@@ -1,10 +1,10 @@
-.input-container, .input-container .label, .input-container .input {
+.input-wrapper, .input-wrapper .label, .input-wrapper .input {
   font-size: 1rem;
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.input-container {
+.input-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,7 +14,7 @@
   padding: 1em;
 }
 
-.input-container .label {
+.input-wrapper .label {
   position: absolute;
   height: 1em;
   padding: 0.1em;
@@ -26,7 +26,7 @@
   cursor: text;
 }
 
-.input-container .input {
+.input-wrapper .input {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -38,11 +38,11 @@
   background: none;
 }
 
-.input-container .input:focus {
+.input-wrapper .input:focus {
   border: 0.1em solid blue;
 }
 
-.input-container .float {
+.input-wrapper .float {
   top: 0.625em;
   left: 2.08333em;
   font-size: 0.8rem;

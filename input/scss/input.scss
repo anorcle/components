@@ -3,7 +3,7 @@ $input-width: 100%;
 $input-height: 1em;
 $input-padding: 1em;
 $label-padding: 0.1em;
-$input-container-padding: 1em;
+$input-wrapper-padding: 1em;
 $label-height: 1em;
 $input-border-size: 0.1em;
 %fontstyle {
@@ -12,18 +12,18 @@ $input-border-size: 0.1em;
     font-family: Arial, Helvetica, sans-serif;
 }
 $fontsize: 1rem;
-.input-container {
+.input-wrapper {
     width: $input-width;
     display: flex;
     position: relative;
-    padding: $input-container-padding;
+    padding: $input-wrapper-padding;
     @extend %fontstyle;
     .label {
         position: absolute;
         height: $label-height;
         padding: $label-padding;
-        top: $input-padding + $input-container-padding + $input-border-size - $label-padding;
-        left: $input-padding + $input-container-padding + $input-border-size - $label-padding;
+        top: $input-padding + $input-wrapper-padding + $input-border-size - $label-padding;
+        left: $input-padding + $input-wrapper-padding + $input-border-size - $label-padding;
         @extend %fontstyle;
         transition: all 0.1s ease-in-out;
         cursor: text;
@@ -41,8 +41,8 @@ $fontsize: 1rem;
         }
     }
     .float {
-        top: ($input-container-padding/2 + $input-border-size - $label-padding)/0.8;
-        left: ($input-padding*2/3 + $input-container-padding + $input-border-size - $label-padding)/0.8;
+        top: ($input-wrapper-padding/2 + $input-border-size - $label-padding)/0.8;
+        left: ($input-padding*2/3 + $input-wrapper-padding + $input-border-size - $label-padding)/0.8;
         font-size: 0.8rem;
         background-color: #fff;
     }
