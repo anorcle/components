@@ -14,7 +14,6 @@ $fontsize: 1rem;
     width: 100%;
     display: flex;
     position: relative;
-    // background-color: #eee;
     padding: $input-container-padding;
     @extend %fontstyle;
     .label {
@@ -40,9 +39,10 @@ $fontsize: 1rem;
         }
     }
     .float {
-        top: ($input-container-padding/2 + $input-border-size - $label-padding)*0.9;
-        left: ($input-padding + $input-container-padding + $input-border-size - $label-padding)*0.9;
-        font-size: 0.9rem;
-        background-color: #fff; 
+        top: ($input-container-padding/2 + $input-border-size - $label-padding)/0.8;
+        left: ($input-padding*2/3 + $input-container-padding + $input-border-size - $label-padding)/0.8;
+        font-size: 0.8rem;
+        background-color: #fff;
+        // outline: 1px solid red;
     }
 }

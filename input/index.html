@@ -11,14 +11,21 @@
             display: flex;
         }
     </style>
+    <script src="./js/input.js"></script>
 </head>
 <body>
-    <div class="box">
+    <div class="box" id="form">
         <div class="input-container">
             <input type="text" class="input" id="input1" data-label="Name">
             <label for="input1" id="label1" class="label">Name</label>
         </div>
     </div>
+
     <script src="./js/index.js"></script>
+
+    <script>
+        let input = new Input('Date').getElement('pass');
+        let form = document.getElementById('form').appendChild(input);
+    </script>
 </body>
 </html>
