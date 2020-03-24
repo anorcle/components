@@ -1,3 +1,5 @@
+$input-width: 100%;
+
 $input-height: 1em;
 $input-padding: 1em;
 $label-padding: 0.1em;
@@ -11,7 +13,7 @@ $input-border-size: 0.1em;
 }
 $fontsize: 1rem;
 .input-container {
-    width: 100%;
+    width: $input-width;
     display: flex;
     position: relative;
     padding: $input-container-padding;
@@ -35,7 +37,6 @@ $fontsize: 1rem;
         @extend %fontstyle;
         &:focus {
             border: $input-border-size solid blue;
-            outline: none;
         }
     }
     .float {
@@ -43,6 +44,5 @@ $fontsize: 1rem;
         left: ($input-padding*2/3 + $input-container-padding + $input-border-size - $label-padding)/0.8;
         font-size: 0.8rem;
         background-color: #fff;
-        // outline: 1px solid red;
     }
 }

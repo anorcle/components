@@ -15,17 +15,25 @@
 </head>
 <body>
     <div class="box" id="form">
-        <div class="input-container">
-            <input type="text" class="input" id="input1" data-label="Name">
-            <label for="input1" id="label1" class="label">Name</label>
-        </div>
     </div>
 
     <script src="./js/index.js"></script>
 
     <script>
-        let input = new Input('Date').getElement('pass');
-        let form = document.getElementById('form').appendChild(input);
+        param = {
+            type: 'password',
+            label: 'Password',
+            id: 'password'
+        }
+        formInput = [
+            {type: 'Email'},
+            {type: 'Password'}
+        ]
+        let form = document.getElementById('form');
+        
+        formInput.forEach(elm => {
+            form.appendChild(getInputElement(elm));
+        });
     </script>
 </body>
 </html>

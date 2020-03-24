@@ -6,42 +6,38 @@
  * 
  */
 
-function Input(type, label) {
-    this.type = type;
-    this.label = label;
-}
-Input.prototype.getElement = function (id) {
+function getInputElement({type, id, label}) {
 
     let inputContainer = document.createElement('div');
     inputContainer.classList.add('input-container');
 
     let input = document.createElement('input');
     input.classList.add('input');
-    input.type = this.type;
-    input.id = id || 'in-'+ (Input.num = Input.num || 0 + 1).toString();
+    input.type = type;
+    input.id = id || type;
 
-    let label = document.createElement('label');
-    label.classList.add('label');
-    label.innerText = this.label || this.type;
-    label.htmlFor = input.id;
-    console.log(label);
+    let labelElm = document.createElement('label');
+    labelElm.classList.add('label');
+    labelElm.innerText = label || type;
+    labelElm.htmlFor = input.id;
+    console.log(labelElm);
     
 
-    if (this.type.toLowerCase() === 'date') {
-        label.classList.add('float');
+    if (type.toLowerCase() === 'date') {
+        labelElm.classList.add('float');
     } else {
         input.addEventListener('focus', function (eve) {
-            label.classList.add('float');
+            labelElm.classList.add('float');
         })
 
         input.addEventListener('blur', function (eve) {
             if(input.value === '') {
-                label.classList.remove('float');
+                labelElm.classList.remove('float');
             }
         })
     }
 
     inputContainer.appendChild(input);
-    inputContainer.appendChild(label);
+    inputContainer.appendChild(labelElm);
     return inputContainer;
 }
