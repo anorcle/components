@@ -1,5 +1,5 @@
-$test-outline: 1px solid rgba(0, 0, 255, 0);
-$test-background: #3f70db00;
+$test-outline: none;
+$test-background: inherit;
 $elevation-3dp: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
 
 #context-menu {
@@ -16,6 +16,7 @@ $elevation-3dp: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1p
     padding: 12px 0;
     outline: $test-outline;
     background-color: $test-background;
+    z-index: 100000;
     .menu-option {
         display: flex;
         justify-content: space-between;
