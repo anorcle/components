@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/index.min.css">
 </head>
 <body>
-    <div id="context-menu">
-        <div class="menu-option">
+    <div id="context-menu" style="display: none;">
+        <div class="menu-option" id="CM_cut-btn">
             <div class="option">
                 <div class="option-icon">
                     <img src="./icons/content-cut.svg">
@@ -17,7 +17,7 @@
             </div>
             <div class="side-note">Ctrl + C</div>
         </div>
-        <div class="menu-option">
+        <div class="menu-option" id="CM_copy-btn">
             <div class="option">
                 <div class="option-icon">
                     <img src="./icons/content-copy.svg">
@@ -26,7 +26,7 @@
             </div>
             <div class="side-note">Ctrl + C</div>
         </div>
-        <div class="menu-option">
+        <div class="menu-option" id="CM_paste-btn">
             <div class="option">
                 <div class="option-icon">
                     <img src="./icons/content-paste.svg">
@@ -36,7 +36,7 @@
             <div class="side-note">Ctrl + V</div>
         </div>
         <hr>
-        <div class="menu-option">
+        <div class="menu-option" id="CM_insert-link-btn">
             <div class="option">
                 <div class="option-icon">
                     <img src="./icons/insert-link.svg">
@@ -45,7 +45,7 @@
             </div>
             <div class="side-note">Ctrl + K</div>
         </div>
-        <div class="menu-option">
+        <div class="menu-option" id="CM_insert-image-btn">
             <div class="option">
                 <div class="option-icon">
                     <img src="./icons/add-photo.svg">
@@ -55,5 +55,6 @@
             <div class="side-note"></div>
         </div>
     </div>
+    <script src="./scripts/context-menu.js"></script>
 </body>
 </html>

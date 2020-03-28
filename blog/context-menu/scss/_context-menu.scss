@@ -5,6 +5,11 @@ $elevation-3dp: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1p
 #context-menu {
     display: inline-flex;
     position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: auto;
     flex-direction: column;
     box-shadow: $elevation-3dp;
     border-radius: 12px;
@@ -15,6 +20,7 @@ $elevation-3dp: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1p
         display: flex;
         justify-content: space-between;
         cursor: pointer;
+        transition: background-color 100ms ease-in-out;
         user-select: none;
         outline: $test-outline;
         background-color: $test-background;
@@ -49,6 +55,7 @@ $elevation-3dp: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1p
         .side-note {
             //...
             display: inline-flex;
+            white-space: nowrap;
             align-items: center;
             font-size: 13px;
             text-align: right;
