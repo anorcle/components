@@ -19,7 +19,7 @@
   border-radius: 12px;
   padding: 12px 0;
   outline: none;
-  background-color: inherit;
+  background-color: #fff;
   z-index: 100000;
 }
 
@@ -41,7 +41,7 @@
       -ms-user-select: none;
           user-select: none;
   outline: none;
-  background-color: inherit;
+  background-color: #fff;
 }
 
 #context-menu .menu-option .option {
@@ -59,7 +59,7 @@
           align-items: center;
   padding: 12px 24px;
   outline: none;
-  background-color: inherit;
+  background-color: #fff;
 }
 
 #context-menu .menu-option .option .option-icon {
@@ -70,7 +70,7 @@
   height: 24px;
   padding-right: 12px;
   outline: none;
-  background-color: inherit;
+  background-color: #fff;
 }
 
 #context-menu .menu-option .option .option-icon img {
@@ -82,7 +82,7 @@
   font-size: 1rem;
   padding-left: 12px;
   outline: none;
-  background-color: inherit;
+  background-color: #fff;
 }
 
 #context-menu .menu-option .side-note {
@@ -99,7 +99,7 @@
   text-align: right;
   padding: 0 24px;
   outline: none;
-  background-color: inherit;
+  background-color: #fff;
 }
 
 #context-menu .menu-option:hover {
