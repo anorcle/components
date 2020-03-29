@@ -47,6 +47,7 @@
     height: 100vh;
     overflow: auto;
     user-select: none;
+    background-color: #fff;
     @include test;
     .nav-body {
         .secondary-header {
