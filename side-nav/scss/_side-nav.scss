@@ -77,6 +77,7 @@
                     //...
                     @include test;
                     display: flex;
+                    justify-content: center;
                     align-items: center;
                     padding-left: 12px;
                 }
