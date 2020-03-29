@@ -1,0 +1,78 @@
+@mixin test {
+    // outline: 1px solid blue;
+    // background-color: rgba(248, 133, 252, 0.178);
+}
+.side-nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow: auto;
+    user-select: none;
+    background-color: #fff;
+    z-index: 49;
+    @include test;
+    .nav-body {
+        .secondary-header {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            hr {
+                position: absolute;
+                bottom: 0;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            @include test;
+            .nav-item {
+                @include test;
+                display: inline-flex;
+                padding: 12px 24px;
+                cursor: pointer;
+               .item-icon {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                    @include test;
+                    padding-right: 12px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .item-text {
+                    //...
+                    @include test;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 12px;
+                }
+                &:hover {
+                    background-color: hsl(0, 0%, 90%);
+                }
+                &:active {
+                    background-color: hsl(0, 0%, 85%);
+                }
+            }
+            
+        }
+        hr {
+            width: 100%;
+            height: 2px;
+            border: none;
+            background-color: hsl(0, 0%, 90%);
+        }
+    }
+    .nav-footer {
+        padding: 24px;
+    }
+}
