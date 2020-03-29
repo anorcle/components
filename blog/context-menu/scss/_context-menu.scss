@@ -14,32 +14,32 @@ $elevation-3dp: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1p
     box-shadow: $elevation-3dp;
     border-radius: 12px;
     padding: 12px 0;
-    outline: $test-outline;
+    // outline: $test-outline;
     background-color: $test-background;
     z-index: 100000;
+    user-select: none;
     .menu-option {
         display: flex;
         justify-content: space-between;
         cursor: pointer;
         transition: background-color 100ms ease-in-out;
-        user-select: none;
-        outline: $test-outline;
-        background-color: $test-background;
+        // outline: $test-outline;
+        // background-color: $test-background;
         .option {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             padding: 12px 24px;
-            outline: $test-outline;
-            background-color: $test-background;
+            // outline: $test-outline;
+            // background-color: $test-background;
             .option-icon {
                 //...
                 flex-shrink: 0;
                 width: 24px;
                 height: 24px;
                 padding-right: 12px;
-                outline: $test-outline;
-                background-color: $test-background;
+                // outline: $test-outline;
+                // background-color: $test-background;
                 img {
                     width: 100%;
                     height: 100%;
@@ -49,8 +49,8 @@ $elevation-3dp: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1p
                 //...
                 font-size: 1rem;
                 padding-left: 12px;
-                outline: $test-outline;
-                background-color: $test-background;
+                // outline: $test-outline;
+                // background-color: $test-background;
             }
         }
         .side-note {
@@ -61,8 +61,8 @@ $elevation-3dp: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1p
             font-size: 13px;
             text-align: right;
             padding: 0 24px;
-            outline: $test-outline;
-            background-color: $test-background;
+            // outline: $test-outline;
+            // background-color: $test-background;
         }
         &:hover {
             background-color: hsl(0, 0%, 90%);

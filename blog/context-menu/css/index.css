@@ -18,9 +18,12 @@
           box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   padding: 12px 0;
-  outline: none;
   background-color: #fff;
   z-index: 100000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #context-menu .menu-option {
@@ -36,12 +39,6 @@
   -webkit-transition: background-color 100ms ease-in-out;
   -o-transition: background-color 100ms ease-in-out;
   transition: background-color 100ms ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  outline: none;
-  background-color: #fff;
 }
 
 #context-menu .menu-option .option {
@@ -58,8 +55,6 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 24px;
-  outline: none;
-  background-color: #fff;
 }
 
 #context-menu .menu-option .option .option-icon {
@@ -69,8 +64,6 @@
   width: 24px;
   height: 24px;
   padding-right: 12px;
-  outline: none;
-  background-color: #fff;
 }
 
 #context-menu .menu-option .option .option-icon img {
@@ -81,8 +74,6 @@
 #context-menu .menu-option .option .option-text {
   font-size: 1rem;
   padding-left: 12px;
-  outline: none;
-  background-color: #fff;
 }
 
 #context-menu .menu-option .side-note {
@@ -98,8 +89,6 @@
   font-size: 13px;
   text-align: right;
   padding: 0 24px;
-  outline: none;
-  background-color: #fff;
 }
 
 #context-menu .menu-option:hover {
