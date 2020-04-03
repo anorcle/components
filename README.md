@@ -7,5 +7,5 @@ Basic Web Components
 - [Home](./blog/home)
 - [Side Nav](./blog/side-nav)
 
-## others
+## More
 - [Input](./input)
