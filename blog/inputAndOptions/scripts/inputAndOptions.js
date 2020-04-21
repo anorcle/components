@@ -34,12 +34,16 @@ fontNameIn.addEventListener('input', function () {
         option.addEventListener('click', function (event) {
             console.log(event.target.innerText);
 
-            let fontSheet = document.createElement('link');
-            fontSheet.href = baseUrl + "?family="+event.target.innerText.split(' ').join('+');
-            fontSheet.rel = "stylesheet";
-            document.body.appendChild(fontSheet);
-            document.getElementById('test').style.fontFamily = event.target.innerText;
-
+            if (document.getElementById('fs-' + event.target.innerText.toLowerCase().split(' ').join('-'))) {
+                document.getElementById('test').style.fontFamily = event.target.innerText;
+            } else {
+                let fontSheet = document.createElement('link');
+                fontSheet.href = baseUrl + "?family=" + event.target.innerText.split(' ').join('+');
+                fontSheet.rel = "stylesheet";
+                fontSheet.id = 'fs-' + event.target.innerText.toLowerCase().split(' ').join('-');
+                document.body.appendChild(fontSheet);
+                document.getElementById('test').style.fontFamily = event.target.innerText;
+            }
         })
         options.appendChild(option);
     })
