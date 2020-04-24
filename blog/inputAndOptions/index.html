@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input And Options</title>
+    <link rel="stylesheet" href="../editing-toolbar/css/editingtoolbar.min.css">
 </head>
 
 <body>
-    <div class="input-and-options" id="fontName-IAO">
-        <input type="text" class="input font-name" value="Roboto" id="font-name-in">
-        <button class="options-btn"><img src="./icons/arrow-drop-down.svg" alt="more"></button>
+    <hr>
+    <div id="progressReport"></div>
+    <hr>
+    <div class="editing-tool-bar">
+        <div class="input-and-options" id="fontName-IAO">
+            <input type="text" class="input font-name" value="Roboto" id="font-name-in">
+            <button class="options-btn"><img src="./icons/arrow-drop-down.svg" alt="more"></button>
+        </div>
     </div>
-    <div id="options" style="max-height: 70vh; overflow: auto;"></div>
+    <div id="options" style="max-height: 50vh; overflow: auto;"></div>
+    
     <p id="test">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem ullam quis autem provident
         repellendus quia tenetur, asperiores sunt! Quia, itaque reprehenderit deserunt unde facere, harum tenetur cumque
