@@ -95,7 +95,7 @@ fontNameIn.addEventListener('input', function () {
             console.log(selectedFont);
 
             if (document.getElementById('fs-' + selectedFont.toLowerCase().split(' ').join('-'))) {
-                document.getElementById('test').style.fontFamily = selectedFont;
+                document.getElementById('text').style.fontFamily = "'" + selectedFont + "'";
             } else {
                 let fontSheet = document.createElement('link');
                 fontSheet.href = baseUrl + "?family=" + selectedFont.split(' ').join('+');
@@ -106,7 +106,7 @@ fontNameIn.addEventListener('input', function () {
                 fontSheet.id = 'fs-' + selectedFont.toLowerCase().split(' ').join('-');
                 document.body.appendChild(fontSheet);
                 progressReport.innerText = selectedFont + ': Loading...';
-                document.getElementById('test').style.fontFamily = selectedFont;
+                document.getElementById('text').style.fontFamily = "'" + selectedFont + "'";
             }
         })
         options.appendChild(option);
