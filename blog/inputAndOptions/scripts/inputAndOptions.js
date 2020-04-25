@@ -89,7 +89,7 @@ fontNameIn.addEventListener('input', function () {
     rankedOptions.forEach(function (font) {
         let option = document.createElement('div');
         option.innerText = font;
-        option.style.cursor = 'pointer';
+        option.classList.add('option-value');
         option.addEventListener('click', function (event) {
             let selectedFont = event.target.innerText;
             console.log(selectedFont);
@@ -109,7 +109,17 @@ fontNameIn.addEventListener('input', function () {
                 document.getElementById('text').style.fontFamily = "'" + selectedFont + "'";
             }
         })
-        options.appendChild(option);
+
+        let arrow = document.createElement('div');
+        arrow.innerHTML = '<img src="./icons/arrow-drop-down.svg" alt="more">';
+        arrow.classList.add('options-btn');
+
+        let div = document.createElement('div');
+        div.classList.add('option');
+        div.appendChild(option);
+        div.appendChild(arrow);
+        options.appendChild(div);
+
     })
 })
 
