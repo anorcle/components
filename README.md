@@ -6,6 +6,7 @@ Basic Web Components
 - [Header](./blog/header)
 - [Home](./blog/home)
 - [Side Nav](./blog/side-nav)
+- [Input And Options](./blog/inputAndOptions)
 
 ## More
 - [Input](./input)
