@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./css/input.min.css">
     <style>
         .box {
-            max-width: 300px;
+            max-width: 500px;
             display: flex;
+            margin: 2em auto;
             flex-direction: column;
         }
     </style>
@@ -16,20 +17,12 @@
 </head>
 <body>
     <div class="box" id="form">
+        <Anorcle-Float-Input label="First Name" id="afi-1" type="text"></Anorcle-Float-Input>
+        <Anorcle-Float-Input label="Last Name" id="afi-2" type="text"></Anorcle-Float-Input>
+        <Anorcle-Float-Input label="Email Address" id="afi-3" type="email"></Anorcle-Float-Input>
+        <Anorcle-Float-Input label="Enter Date" id="afi-4" type="date"></Anorcle-Float-Input>
+        <Anorcle-Float-Input label="Enter Time" id="afi-5" type="time"></Anorcle-Float-Input>
+        <Anorcle-Float-Input label="Your Address" id="afi-6" type="text" multiline="true"></Anorcle-Float-Input>    
     </div>
-
-    <script src="./js/index.js"></script>
-
-    <script>
-        var formInputs = [
-            {type: 'Email'},
-            {type: 'Password'}
-        ]
-        var form = document.getElementById('form');
-
-        formInputs.forEach(elm => {
-            form.appendChild(getInputElement(elm));
-        });
-    </script>
 </body>
 </html>

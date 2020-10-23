@@ -38,6 +38,7 @@
   border: 0.1em solid gray;
   border-radius: 0.5em;
   background: none;
+  outline: none;
 }
 
 .input-wrapper .input:focus {

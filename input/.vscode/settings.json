@@ -33,5 +33,6 @@
     "scss.lint.duplicateProperties": "warning",
     "scss.lint.unknownVendorSpecificProperties": "warning",
     "scss.lint.zeroUnits": "warning",
-    "editor.formatOnType": false
+    "editor.formatOnType": false,
+    "liveServer.settings.port": 81
 }
